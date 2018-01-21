@@ -1,96 +1,12 @@
-/*
-Same size image bootstrap grid example
-*/
-.image1 {
-  background-image: url(https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
-}
-
-.image2 {
-  background-image: url(https://images.unsplash.com/photo-1465405092061-4db6005a2be0?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=);
-}
-
-.image {
-  width: 100%;
-  height: 250px;
-  background-size: cover;
-  background-position: center center;
-}
-
-.flex {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.tab{
-  padding-left: 10px;
-  padding-bottom: 10px;
-}
-
 body{
-	padding-top: 70px;
   min-width: 350px;
 }
 .jumbotron {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 0px;
-}
-.jumbotron h2{
-	text-align: center;
-	color: green;
-  text-transform: uppercase;
-  padding-top: 28;
-  padding-bottom: 28;
-}
-
-.navbar-default .navbar-nav > li > a{
-	color: green;
-}
-
-.navbar > .container .navbar-brand{
-	color: green;
-}
-
-.category h1{
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.category {
-   text-transform: capitalize;
-}
-
-.pull-right .btn{
-  text-align: right;
-}
-.left{
-  float: left;
-  margin-right:1px;
-}
-.item{
-  color: #2aabd2;
-  background: #fff;
-  line-height: 1.5;
-  border-radius: 6px;
-  padding: 2px 8px;
-  border: 1px solid #398439;"
-}
-.pasta{
-  color: #265a88;
-  background: #fff;
-  line-height: 1.5;
-  border-radius: 6px;
-  padding: 2px 8px;
-  border: 1px solid #398439;"
-}
-
-.edicao{
-  margin-top: 30px;
-}
-.criacao{
-  margin-top: 30px;
-}
-.teste{
-  padding: 20px;
-  background: palegreen;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: gray;
+    text-transform: uppercase;
+    background-image: linear-gradient(white,lightblue);
 }

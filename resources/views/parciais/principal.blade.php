@@ -1,12 +1,11 @@
 @include('parciais/cabecalho')
 
 <div class="container">
-  <div class="jumbotron">
-    <h2>@yield('mainTitle')</h2>
-  </div>
-
   <div class="row flex">
-    @yield('content')
+    <div class="jumbotron">
+      <h2>@yield('titulo')</h2>
+    </div>
+      @yield('content')
   </div>
 </div>
 
