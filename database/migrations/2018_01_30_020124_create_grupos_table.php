@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePastasTable extends Migration
+class CreateGruposTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class CreatePastasTable extends Migration
      */
     public function up()
     {
-        Schema::create('pastas', function (Blueprint $table) {
+        Schema::create('grupos', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nome');
+            $table->text('descricao')->nullable();
+            $table->integer('grupo_id')->unsigned();
+            $table->foreign('grupo_id')->references('id')->on('grupos');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreatePastasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pastas');
+        Schema::dropIfExists('grupos');
     }
 }

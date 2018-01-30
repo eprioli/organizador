@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\model\Pasta;
+use App\model\Grupo;
 use Illuminate\Http\Request;
 
-class PastaController extends Controller
+class GrupoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class PastaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\model\Pasta  $pasta
+     * @param  \App\model\Grupo  $grupo
      * @return \Illuminate\Http\Response
      */
-    public function show(Pasta $pasta)
+    public function show(Grupo $grupo)
     {
         //
     }
@@ -52,10 +52,10 @@ class PastaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\model\Pasta  $pasta
+     * @param  \App\model\Grupo  $grupo
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pasta $pasta)
+    public function edit(Grupo $grupo)
     {
         //
     }
@@ -64,10 +64,10 @@ class PastaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\model\Pasta  $pasta
+     * @param  \App\model\Grupo  $grupo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pasta $pasta)
+    public function update(Request $request, Grupo $grupo)
     {
         //
     }
@@ -75,10 +75,10 @@ class PastaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\model\Pasta  $pasta
+     * @param  \App\model\Grupo  $grupo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pasta $pasta)
+    public function destroy(Grupo $grupo)
     {
         //
     }

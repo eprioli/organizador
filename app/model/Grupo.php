@@ -4,7 +4,7 @@ namespace App\model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pasta extends Model
+class Grupo extends Model
 {
     //
 }
