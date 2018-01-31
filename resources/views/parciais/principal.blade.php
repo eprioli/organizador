@@ -1,11 +1,25 @@
 @include('parciais/cabecalho')
 
-<div class="container">
-  <div class="row flex">
+<div class="container-fluid">
+  <div class="row">
     <div class="jumbotron">
       <h2>@yield('titulo')</h2>
     </div>
-      @yield('content')
+    <div class="col-sm-3">
+      <h2>Coluna esquerda</h2>
+      <p>@yield('coluna')</p>
+    </div>
+    <div class="col-sm-9">
+      <h2>Coluna direita</h2>
+      <div class="container-fluid">
+        <div class="row">
+
+            @yield('content')
+
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 

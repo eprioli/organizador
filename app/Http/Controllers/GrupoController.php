@@ -14,7 +14,8 @@ class GrupoController extends Controller
      */
     public function index()
     {
-        //
+        $grupos = Grupo::orderBy('nome')->get();
+        return view('welcome', compact('grupos'));
     }
 
     /**
