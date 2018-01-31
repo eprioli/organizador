@@ -12,15 +12,9 @@
 @endsection
 
 @section('content')
-  amor da minha vida <br>
-  amor da minha vida <br>
-  amor da minha vida <br>
-  amor da minha vida <br>
-  amor da minha vida <br>
-  <p>amor da minha vida</p>
-  <p>amor da minha vida</p>
-  <p>amor da minha vida</p>
-  <p>amor da minha vida</p>
-  <p>amor da minha vida</p>
-
+  @foreach ($grupos as $grupo)
+    <div class="col-sm-3">
+      {{$grupo->descricao}}<br>
+    </div>
+  @endforeach
 @endsection

@@ -12,13 +12,10 @@
     <div class="col-sm-9">
       <h2>Coluna direita</h2>
       <div class="container-fluid">
-        <div class="row">
-
-            @yield('content')
-
+        <div class="row flex">
+          @yield('content')
         </div>
       </div>
-
     </div>
   </div>
 </div>
