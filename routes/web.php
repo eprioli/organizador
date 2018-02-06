@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'GrupoController@index');
+Route::resource('/grupos', 'GrupoController');

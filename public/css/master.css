@@ -1,12 +1,30 @@
 body{
   min-width: 350px;
+  background-color: navajowhite;
+  color: gray;
 }
 .jumbotron {
     padding-top: 5px;
     padding-bottom: 10px;
     margin-bottom: 10px;
     text-align: center;
-    color: gray;
     text-transform: uppercase;
-    background-image: linear-gradient(white,lightblue);
+    background-image: linear-gradient(white,navajowhite);
+}
+#coluna{
+  background-color: navajowhite;
+}
+
+.botao{
+  width: 80%;
+  text-align: center;
+  margin-top:5px;
+  padding: 4px;
+  border: 2px lightgray solid;
+  border-radius: 6px;
+  background-color: seashell;
+}
+#conteudo{
+  background-color: seashell;
+  padding-bottom: 20px;
 }
