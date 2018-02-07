@@ -11,11 +11,15 @@ body{
     text-transform: uppercase;
     background-image: linear-gradient(white,navajowhite);
 }
-#coluna{
+.coluna{
   background-color: navajowhite;
+  align-items: center;
+  text-align: center;
+
 }
 
 .botao{
+  margin-left: 10%;
   width: 80%;
   text-align: center;
   margin-top:5px;
@@ -24,7 +28,17 @@ body{
   border-radius: 6px;
   background-color: seashell;
 }
-#conteudo{
-  background-color: seashell;
+.conteudo{
+  /*background-color: seashell;*/
   padding-bottom: 20px;
+}
+.edit{
+  float: left;
+}
+.delete{
+  float: right;
+}
+.thumbnail{
+  width: 1000px;    /* largura da imagem */
+  height: 550px;   /*  altura da imagem  */
 }

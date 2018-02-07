@@ -82,6 +82,6 @@ class GrupoController extends Controller
      */
     public function destroy(Grupo $grupo)
     {
-        //
+      
     }
 }

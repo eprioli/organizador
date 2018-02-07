@@ -2,23 +2,46 @@
 @section('aba','welcome')
 
 @section('titulo')
-  Organizador
+  <a href = "/" class = "btn btn-success btn-lg" role = "button">
+    Organizador home page
+  </a>
 @endsection
 
 @section('coluna')
   @foreach ($grupos as $grupo)
-    <div class="botao"><a href="/grupos/{{ $grupo->id }}">{{ $grupo->nome }}</a></div>
+    <div class="botao">
+      <span class="edit">
+        <a href = "/grupos/{{ $grupo->id }}/edit">
+          <i class="fas fa-edit" aria-hidden="true"></i>
+        </a>
+      </span>
+      <span>
+        <a href="/grupos/{{ $grupo->id }}">{{ $grupo->nome }}</a>
+      </span>
+      <span class="delete">
+        <a href="{{ route('grupos.destroy', $grupo) }}"> <i class="fas fa-trash" aria-hidden="true" class="btn btn-primary"></i></a>
+        {{-- <a href = "/grupos/{{ $grupo->id }}" method="destroy">
+          <i class="fas fa-trash" aria-hidden="true"></i>
+        </a> --}}
+      </span>
+    </div>
+
   @endforeach
 @endsection
 
-@section('content')
-  @if (true)
-    <img src="/imagens/amsterdam_{{ rand(1,3) }}.jpg" with="100%" width="100%" alt="Eu moro em Amsterdam">
-  @else
+@if((count($grupos) !== 0) && ($grupos->first()->grupo_id === 1))
+  @section('foto')
+    <div class="thumbnail">
+      <img src="/imagens/amsterdam_{{ rand(0,9) }}.jpg"  alt="Eu moro em Amsterdam">
+    </div>
+
+  @endsection
+@else
+  @section('content')
     @foreach ($grupos as $grupo)
       <div class="col-sm-3">
-        {{$grupo->descricao}}<br>
+        {{$grupo->descricao}}<br><br>
       </div>
     @endforeach
-  @endif
-@endsection
+  @endsection
+@endif
