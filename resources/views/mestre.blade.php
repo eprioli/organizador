@@ -32,7 +32,7 @@
 @if((count($grupos) !== 0) && ($grupos->first()->grupo_id === 1))
   @section('foto')
     <div class="thumbnail">
-      <img src="/imagens/amsterdam_{{ rand(0,9) }}.jpg"  alt="Eu moro em Amsterdam">
+      <img src="/imagens/amsterdam_{{ rand(0,30) }}.jpg" style="width: 1000px; height: 600px;" alt="Eu moro em Amsterdam">
     </div>
 
   @endsection

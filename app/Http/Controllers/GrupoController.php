@@ -82,6 +82,7 @@ class GrupoController extends Controller
      */
     public function destroy(Grupo $grupo)
     {
-      
+      $grupo->delete();
+      return redirect()->back();
     }
 }
