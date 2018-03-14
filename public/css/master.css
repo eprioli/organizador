@@ -1,3 +1,4 @@
+
 body{
   min-width: 350px;
   background-color: navajowhite;
@@ -10,6 +11,10 @@ body{
     text-align: center;
     text-transform: uppercase;
     background-image: linear-gradient(white,navajowhite);
+}
+.caixa-alta{
+  text-transform: uppercase;
+  color: brown;
 }
 .coluna{
   background-color: navajowhite;
