@@ -1,4 +1,4 @@
-@extends('/parciais/principal')
+@extends('../parciais/principal')
 @section('aba','welcome')
 
 @section('titulo')
@@ -25,7 +25,6 @@
         </a> --}}
       </span>
     </div>
-
   @endforeach
 @endsection
 
@@ -34,12 +33,14 @@
     <div class="thumbnail">
       <img src="/imagens/amsterdam_{{ rand(0,30) }}.jpg" style="width: 1000px; height: 600px;" alt="Eu moro em Amsterdam">
     </div>
-
   @endsection
 @else
   @section('content')
     @foreach ($grupos as $grupo)
       <div class="col-sm-3">
+        <div class="caixa-alta">
+          {{$grupo->nome}}
+        </div>
         {{$grupo->descricao}}<br><br>
       </div>
     @endforeach
