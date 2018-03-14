@@ -15,7 +15,8 @@ class GrupoController extends Controller
     public function index()
     {
         $grupos = Grupo::where('grupo_id','=',1)->where('nome','<>','raiz')->orderBy('nome')->get();
-        return view('mestre', compact('grupos'));
+        return view('grupos.index', compact('grupos'));
+
     }
 
     /**
@@ -25,7 +26,7 @@ class GrupoController extends Controller
      */
     public function create()
     {
-        //
+        return view('grupos.create');
     }
 
     /**
@@ -48,7 +49,7 @@ class GrupoController extends Controller
     public function show(Grupo $grupo)
     {
       $grupos = Grupo::where('grupo_id','=',$grupo->id)->orderBy('nome')->get();
-      return view('mestre', compact('grupos'));
+      return view('grupos.index', compact('grupos'));
     }
 
     /**
