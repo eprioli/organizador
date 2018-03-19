@@ -1,0 +1,9 @@
+php-debug: 0.2.6
+language-blade: 0.38.0
+file-icons: 2.1.15
+emmet-snippets-compatibility: 1.0.6
+emmet 2.4.3
+blade-snippets 0.2.0
+atom-bootstrap4: 1.4.0
+atom-bootstrap3: 1.2.12
+atom-autocomplete-php: 0.25.6
