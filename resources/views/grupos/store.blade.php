@@ -1,11 +1,6 @@
 @extends('../templates/principal')
 @section('aba','welcome')
 
-@section('titulo')
-
-@endsection
-
-
 @section('coluna')
 
 @endsection

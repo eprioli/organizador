@@ -3,8 +3,13 @@
 <div class="container-fluid">
   <div class="row">
     <div class="jumbotron">
-      <h2>@yield('titulo')</h2>
+      <h2>
+        <a href = "/" class = "btn btn-success btn-lg" role = "button">
+          Organizador home page
+        </a>
+      </h2>
     </div>
+
     <div class="col-sm-3 coluna">
       <h1>
         <a href = "/grupos/create" >

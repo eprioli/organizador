@@ -1,12 +1,6 @@
 @extends('../templates/principal')
 @section('aba','welcome')
 
-@section('titulo')
-  <a href = "/" class = "btn btn-success btn-lg" role = "button">
-    Organizador home page
-  </a>
-@endsection
-
 @section('coluna')
   @foreach ($grupos as $grupo)
     <div class="botao">
