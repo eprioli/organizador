@@ -1,4 +1,4 @@
-@extends('../parciais/principal')
+@extends('../templates/principal')
 @section('aba','welcome')
 
 @section('titulo')
@@ -20,7 +20,7 @@
 
 
 @section('content')
-<h1>Criar um novo produto</h1>
+{{-- <h1>Criar um novo produto</h1>
 {{Form::open(['action' => 'GrupoController@Store'])}}
-{{Form::close()}}
+{{Form::close()}} --}}
 @endsection

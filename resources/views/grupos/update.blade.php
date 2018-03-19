@@ -1,4 +1,4 @@
-@extends('../parciais/principal')
+@extends('../templates/principal')
 @section('aba','welcome')
 
 @section('titulo')

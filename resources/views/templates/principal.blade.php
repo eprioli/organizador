@@ -1,4 +1,4 @@
-@include('parciais/cabecalho')
+@include('../parciais/cabecalho')
 
 <div class="container-fluid">
   <div class="row">
@@ -26,4 +26,4 @@
   </div>
 </div>
 
-@include('parciais/rodape')
+@include('../parciais/rodape')
