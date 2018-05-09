@@ -48,8 +48,10 @@ class GrupoController extends Controller
      */
     public function show(Grupo $grupo)
     {
+      $tituloGrupo = $grupo->nome;
       $grupos = Grupo::where('grupo_id','=',$grupo->id)->orderBy('nome')->get();
-      return view('grupos.index', compact('grupos'));
+      return view('grupos.index')->with('tituloGrupo', $tituloGrupo)
+                                 ->with('grupos', $grupos);
     }
 
     /**

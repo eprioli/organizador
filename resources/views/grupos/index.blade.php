@@ -29,6 +29,9 @@
     </div>
   @endsection
 @else
+  @section('grupo')
+    {{ $tituloGrupo }}
+  @endsection
   @section('content')
     @foreach ($grupos as $grupo)
       <div class="col-sm-3">
