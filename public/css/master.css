@@ -4,6 +4,35 @@ body{
   background-color: navajowhite;
   color: gray;
 }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #D2B48C;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
 .jumbotron {
     padding-top: 5px;
     padding-bottom: 10px;
@@ -20,7 +49,6 @@ body{
   background-color: navajowhite;
   align-items: center;
   text-align: center;
-
 }
 
 .botao{
@@ -37,6 +65,11 @@ body{
   /*background-color: seashell;*/
   padding-bottom: 20px;
 }
+.container{
+  /*background-color: seashell;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .edit{
   float: left;
 }
@@ -44,6 +77,12 @@ body{
   float: right;
 }
 .thumbnail{
-  width: 1005px;    /* largura da imagem */
-  height: 610px;   /*  altura da imagem  */
+  padding-bottom: 10px;
+  width: 100%;
+  border: 1px solid white;
+}
+.ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
